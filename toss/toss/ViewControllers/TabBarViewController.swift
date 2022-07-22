@@ -19,7 +19,6 @@ class TabBarViewController: UITabBarController {
 
 extension TabBarViewController {
     private func setTabBar(){
-        
         let homeVC = HomeViewController()
         let totalVC = TotalViewController()
         
