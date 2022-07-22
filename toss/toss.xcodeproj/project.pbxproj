@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		ED24B4FF287C5F820050F405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED24B4FE287C5F820050F405 /* AppDelegate.swift */; };
 		ED24B501287C5F820050F405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED24B500287C5F820050F405 /* SceneDelegate.swift */; };
-		ED24B503287C5F820050F405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED24B502287C5F820050F405 /* ViewController.swift */; };
+		ED24B503287C5F820050F405 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED24B502287C5F820050F405 /* HomeViewController.swift */; };
 		ED24B508287C5F840050F405 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED24B507287C5F840050F405 /* Assets.xcassets */; };
 		ED24B50B287C5F840050F405 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED24B509287C5F840050F405 /* LaunchScreen.storyboard */; };
+		ED5F74CF288A8733001BDC7E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED5F74CE288A8733001BDC7E /* SnapKit */; };
+		ED5F74D2288A87E9001BDC7E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = ED5F74D1288A87E9001BDC7E /* Then */; };
+		ED5F74D4288A8E65001BDC7E /* TossCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F74D3288A8E65001BDC7E /* TossCell.swift */; };
+		ED5F74D8288A9AA4001BDC7E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F74D7288A9AA4001BDC7E /* TabBarViewController.swift */; };
+		ED5F74DB288A9BCD001BDC7E /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F74DA288A9BCD001BDC7E /* TotalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ED24B4FB287C5F820050F405 /* toss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED24B4FE287C5F820050F405 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED24B500287C5F820050F405 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED24B502287C5F820050F405 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED24B502287C5F820050F405 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ED24B507287C5F840050F405 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED24B50A287C5F840050F405 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED24B50C287C5F840050F405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5F74D3288A8E65001BDC7E /* TossCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossCell.swift; sourceTree = "<group>"; };
+		ED5F74D7288A9AA4001BDC7E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		ED5F74DA288A9BCD001BDC7E /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5F74CF288A8733001BDC7E /* SnapKit in Frameworks */,
+				ED5F74D2288A87E9001BDC7E /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +64,41 @@
 		ED24B4FD287C5F820050F405 /* toss */ = {
 			isa = PBXGroup;
 			children = (
+				ED5F74D6288A8E7B001BDC7E /* Cells */,
+				ED5F74D5288A8E6D001BDC7E /* ViewControllers */,
 				ED24B4FE287C5F820050F405 /* AppDelegate.swift */,
 				ED24B500287C5F820050F405 /* SceneDelegate.swift */,
-				ED24B502287C5F820050F405 /* ViewController.swift */,
 				ED24B507287C5F840050F405 /* Assets.xcassets */,
 				ED24B509287C5F840050F405 /* LaunchScreen.storyboard */,
 				ED24B50C287C5F840050F405 /* Info.plist */,
 			);
 			path = toss;
+			sourceTree = "<group>";
+		};
+		ED5F74D5288A8E6D001BDC7E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED5F74D9288A9B88001BDC7E /* TabBar */,
+				ED5F74D7288A9AA4001BDC7E /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED5F74D6288A8E7B001BDC7E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ED5F74D3288A8E65001BDC7E /* TossCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ED5F74D9288A9B88001BDC7E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				ED24B502287C5F820050F405 /* HomeViewController.swift */,
+				ED5F74DA288A9BCD001BDC7E /* TotalViewController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +117,10 @@
 			dependencies = (
 			);
 			name = toss;
+			packageProductDependencies = (
+				ED5F74CE288A8733001BDC7E /* SnapKit */,
+				ED5F74D1288A87E9001BDC7E /* Then */,
+			);
 			productName = toss;
 			productReference = ED24B4FB287C5F820050F405 /* toss.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +149,10 @@
 				Base,
 			);
 			mainGroup = ED24B4F2287C5F820050F405;
+			packageReferences = (
+				ED5F74CD288A8733001BDC7E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				ED5F74D0288A87E9001BDC7E /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = ED24B4FC287C5F820050F405 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED24B503287C5F820050F405 /* ViewController.swift in Sources */,
+				ED24B503287C5F820050F405 /* HomeViewController.swift in Sources */,
 				ED24B4FF287C5F820050F405 /* AppDelegate.swift in Sources */,
+				ED5F74D4288A8E65001BDC7E /* TossCell.swift in Sources */,
+				ED5F74D8288A9AA4001BDC7E /* TabBarViewController.swift in Sources */,
 				ED24B501287C5F820050F405 /* SceneDelegate.swift in Sources */,
+				ED5F74DB288A9BCD001BDC7E /* TotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +394,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED5F74CD288A8733001BDC7E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		ED5F74D0288A87E9001BDC7E /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED5F74CE288A8733001BDC7E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED5F74CD288A8733001BDC7E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		ED5F74D1288A87E9001BDC7E /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED5F74D0288A87E9001BDC7E /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ED24B4F3287C5F820050F405 /* Project object */;
 }
